@@ -4,3 +4,53 @@
    font-family: $primaryFont;
 }
 
+body{
+    margin: 0px;
+}
+  
+header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 65px;
+   width: 100%;
+   background-color: $black-theme-light;
+}
+.menu-logo{
+   display: flex;
+   padding:$header-padding;
+.menu{
+   padding-right: $header-padding;
+}
+}
+.search{
+   width: 38%;
+   display:flex;
+   padding:$header-padding;
+}
+.end-icons{
+   display: flex;
+   padding:$header-padding;
+}
+.icon{
+   padding-left:$header-padding;
+}
+input{
+   width: 100%;
+   height: 32px;
+   border: 1.18px $bordor-color;
+   border-radius: 2px 0px 0px 2px;
+   background:$blacktheme-dark
+}
+.search-icon{
+   padding-right:15px;
+   padding-left:15px ;
+   display: block;
+   background-color:$bordor-color;
+   border-radius: 0px 2px 2px 0px;
+   color:$icon-color;
+   text-decoration-color:$icon-color ;
+
+
+
+}

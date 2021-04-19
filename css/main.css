@@ -1,6 +1,50 @@
 /* Mixins are going next */
 * {
-  font-family: "Roboto", sans-serif;
-}
+  font-family: "Roboto", sans-serif; }
+
+body {
+  margin: 0px; }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  width: 100%;
+  background-color: #212121; }
+
+.menu-logo {
+  display: flex;
+  padding: 20px; }
+  .menu-logo .menu {
+    padding-right: 20px; }
+
+.search {
+  width: 38%;
+  display: flex;
+  padding: 20px; }
+
+.end-icons {
+  display: flex;
+  padding: 20px; }
+
+.icon {
+  padding-left: 20px; }
+
+input {
+  width: 100%;
+  height: 32px;
+  border: 1.18px #424242;
+  border-radius: 2px 0px 0px 2px;
+  background: #181818; }
+
+.search-icon {
+  padding-right: 15px;
+  padding-left: 15px;
+  display: block;
+  background-color: #424242;
+  border-radius: 0px 2px 2px 0px;
+  color: #909090;
+  text-decoration-color: #909090; }
 
 /*# sourceMappingURL=main.css.map */
