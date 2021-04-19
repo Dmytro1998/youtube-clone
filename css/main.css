@@ -47,4 +47,14 @@ input {
   color: #909090;
   text-decoration-color: #909090; }
 
+.search-icn {
+  display: none; }
+
+@media (max-width: 656px) {
+  .search {
+    display: none; }
+
+  .search-icn {
+    display: block; } }
+
 /*# sourceMappingURL=main.css.map */

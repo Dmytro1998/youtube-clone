@@ -50,7 +50,17 @@ input{
    border-radius: 0px 2px 2px 0px;
    color:$icon-color;
    text-decoration-color:$icon-color ;
+}
+.search-icn{
+   display: none;
+}
 
-
+@media(max-width:656px){
+   .search{
+      display: none;
+   }
+   .search-icn{
+      display: block;}
 
 }
+   
