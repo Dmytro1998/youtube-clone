@@ -6,6 +6,16 @@
 
 body{
     margin: 0px;
+    height: 100vh;
+
+    width: 100vW;
+    box-sizing: border-box;
+}
+button {
+   background-color: transparent;
+   border: none;
+  
+
 }
   
 header{
@@ -15,25 +25,27 @@ header{
    height: 65px;
    width: 100%;
    background-color: $black-theme-light;
+   padding: 12px 16px;
+
 }
 .menu-logo{
    display: flex;
-   padding:$header-padding;
+   
 .menu{
-   padding-right: $header-padding;
+   margin-right:$header-padding;
 }
 }
 .search{
    width: 38%;
    display:flex;
-   padding:$header-padding;
+  
 }
 .end-icons{
    display: flex;
-   padding:$header-padding;
+   
 }
 .icon{
-   padding-left:$header-padding;
+   margin-left: 20px;
 }
 input{
    width: 100%;
@@ -43,8 +55,7 @@ input{
    background:$blacktheme-dark
 }
 .search-icon{
-   padding-right:15px;
-   padding-left:15px ;
+   
    display: block;
    background-color:$bordor-color;
    border-radius: 0px 2px 2px 0px;
