@@ -72,14 +72,22 @@ input{
 }
 .left-nav{
    height:100%;
-   width: 240px;
+   width: 22.77%;
    background-color: $black-theme-light;
 }
 .home-first{
+   padding:$s 0px $s 0px;
    display: flex;
    flex-direction: column;
    border-bottom: 1px solid $bordor-color;
+
    
+}
+.home-second{
+   padding:$s 0px $s 0px;
+   display: flex;
+   flex-direction: column;
+   border-bottom: 1px solid $bordor-color;
 }
 .home{
    display: flex;
@@ -94,6 +102,17 @@ input{
 }
 .home-img{
    margin-right: $xxxl;
+}
+.subscriptions{
+   display: flex;
+   width: 100%;
+   color: $icon-color;
+   padding: 8px 24px;
+   font-family: $primaryFont;
+   font-size: $m;
+   font-weight:bold;
+   text-transform: uppercase;
+
 }
 
 @media(max-width:656px){

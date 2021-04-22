@@ -64,10 +64,17 @@ input {
 
 .left-nav {
   height: 100%;
-  width: 240px;
+  width: 22.77%;
   background-color: #212121; }
 
 .home-first {
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #424242; }
+
+.home-second {
+  padding: 12px 0px 12px 0px;
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #424242; }
@@ -84,6 +91,16 @@ input {
 
 .home-img {
   margin-right: 24px; }
+
+.subscriptions {
+  display: flex;
+  width: 100%;
+  color: #909090;
+  padding: 8px 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase; }
 
 @media (max-width: 656px) {
   .search {
