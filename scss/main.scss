@@ -8,6 +8,7 @@ body{
    height: 100vh;
    width:100vw;
    box-sizing: border-box;
+   overflow-x: hidden;
 
 }
 header{
@@ -16,6 +17,7 @@ header{
    left: 0px;
    z-index: 1;
    width: 100vw;
+   height:56px;
    box-sizing: border-box;
    display:flex;
    align-items: center;
@@ -27,7 +29,7 @@ header{
 }
 .content{
    display: flex;
-   margin-top: 60px;
+   margin-top: $header;
 }
 button{
    background-color: transparent;
@@ -81,11 +83,12 @@ input{
 .search-icn{
    display: none;
 }
-.left-nav{
+aside{
    position: relative;
-   height:100%;
+   height:100vh;
    width: 22.77%;
    background-color: $black-theme-light;
+   overflow-y:scroll;
 }
 .home-first{
    padding:$s 0px $s 0px;
@@ -126,25 +129,47 @@ input{
    text-transform: uppercase;
 
 }
-.under-header{
-   position:absolute;
-   top: 56px;
-  left: 22.77%;
-   display:flex;
-   height: 58px;
-   width: 77.23%;
-   background-color:$blackthema-light-opacity;
 
-}
+
 .header-video{
+   width:100% ;
    display:flex ;
    flex-direction:column;
 }
+.under-header{
+
+   height:58px;
+   width: 100%;
+   background-color:$blackthema-light-opacity;
+   display:flex;
+   padding: 14px 24px;
+   align-items: center;
+  
+   
+  overflow-x: scroll;
+   
+}
+.propositiins{
+   
+   background-color: $bordor-color;
+   font-size: 14px;
+   padding: 7px 12px 7px 12px;
+   color: $white;
+   border: 1px solid #424242;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 16px;
+   margin-left: $s;
+   box-sizing: border-box;
+}
+
 .video-page{
    width: 100%;
    height: 100%;
    background-color:$blacktheme-dark;
+   box-sizing: border-box;
+   padding:32px;
 }
+
 @media(max-width:656px){
    .search{
       display: none;
