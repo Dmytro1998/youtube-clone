@@ -9,6 +9,15 @@ body {
   box-sizing: border-box;
   overflow-x: hidden; }
 
+*::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #212121; }
+
+*::-webkit-scrollbar-thumb {
+  background-color: #909090;
+  border-radius: 4px; }
+
 header {
   position: fixed;
   top: 0px;
@@ -78,7 +87,7 @@ aside {
   position: fixed;
   left: 0px;
   top: 56px;
-  height: calc(100vh-${header});
+  height: calc(100vh - 56px);
   width: 240px;
   background-color: #212121;
   overflow-y: scroll; }
@@ -125,10 +134,11 @@ aside {
 
 .under-header {
   position: fixed;
+  z-index: 2;
   top: 56px;
   left: 240px;
   height: 58px;
-  width: calc(100vh- 240px);
+  width: calc(100vw - 240px);
   background-color: #212121;
   display: flex;
   padding: 14px 24px;
@@ -149,19 +159,58 @@ aside {
 
 .video-page {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   position: relative;
   top: 89px;
   left: 240px;
   background-color: #181818;
   box-sizing: border-box;
-  padding: 32px; }
+  padding: 32px;
+  width: calc(100vw - 240px);
+  height: 1000px; }
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 270px;
+  box-sizing: border-box; }
 
 .video {
-  width: 25%;
-  margin-left: 10px; }
+  width: 24%; }
 
+.video img {
+  max-width: 100%; }
+
+.video-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 23px 14px 0px; }
+
+.icon-for-video {
+  margin-bottom: 50px;
+  margin-right: 11px; }
+
+.text-description {
+  display: flex;
+  flex-direction: column; }
+
+a {
+  text-decoration: none;
+  color: #909090; }
+
+.video-name {
+  margin: 0px;
+  color: #FFFFFF; }
+
+.number-of-views {
+  margin: 0px;
+  color: #909090; }
+
+@media (max-width: 1141px) {
+  .video {
+    width: 33%; } }
 @media (max-width: 656px) {
   .search {
     display: none; }

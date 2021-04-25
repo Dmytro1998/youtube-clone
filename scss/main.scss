@@ -11,6 +11,16 @@ body{
    overflow-x: hidden;
 
 }
+*::-webkit-scrollbar {
+   width: 0.5em;
+   height: 0.5em;
+   background-color: $black-theme-light;
+ }
+  
+ *::-webkit-scrollbar-thumb {
+   background-color: $icon-color;
+   border-radius: 4px;
+ }
 header{
    position:fixed;
    top: 0px;
@@ -88,7 +98,7 @@ aside{
    position: fixed;
    left: 0px;
    top:$header;
-   height:calc(100vh-${header});
+   height:calc(100vh - #{$header});
    width:240px;
    background-color: $black-theme-light;
    overflow-y:scroll;
@@ -141,10 +151,11 @@ aside{
 }
 .under-header{
    position: fixed;
+   z-index: 2;
    top: $header;
    left:$aside;
    height:58px;
-   width:calc(100vh- 240px);
+   width:calc(100vw - 240px);
    background-color:$blackthema-light-opacity;
    display:flex;
    padding: 14px 24px;
@@ -165,23 +176,69 @@ aside{
    margin-left: $s;
    box-sizing: border-box;
 }
-
 .video-page{
    display: flex;
-   align-items: center;
-   justify-content: space-between;
+   flex-direction: column;
+   // justify-content: space-between;
    position: relative;
    top: 89px;
    left:240px;
     background-color:$blacktheme-dark;
    box-sizing: border-box;
    padding:32px;
+   width: calc(100vw - 240px);
+   height: 1000px;
+
 }
-.video{
-   width: 25%;
-   margin-left: 10px;
+.row{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 270px;
+   box-sizing: border-box;
 }
 
+.video{
+   width: 24%;
+  
+}
+
+.video img {
+   max-width: 100%;
+}
+.video-description{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 12px 23px 14px 0px;
+}
+.icon-for-video{
+   margin-bottom: 50px;
+   margin-right:11px;
+
+}
+.text-description{
+   display: flex;
+   flex-direction: column;
+}
+a{
+   text-decoration: none;
+   color:$icon-color;
+}
+.video-name{
+   margin:0px;
+   color:$white;
+}
+.number-of-views{
+   margin: 0px;
+   color: $icon-color;
+
+}
+@media(max-width:1141px){
+   .video{
+      width: 33%;
+   }
+}
 @media(max-width:656px){
    .search{
       display: none;
