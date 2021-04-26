@@ -240,7 +240,11 @@ a {
 
 .video-name {
   margin: 0px;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 230px;
+  white-space: nowrap; }
 
 .number-of-views {
   margin: 0px;
@@ -284,7 +288,13 @@ a {
     box-sizing: border-box;
     padding: 32px;
     width: calc(100vw - 72px);
-    height: 1000px; } }
+    height: 1000px; }
+
+  .video-name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 200px;
+    white-space: nowrap; } }
 @media (max-width: 890px) {
   .video {
     width: 48%; } }

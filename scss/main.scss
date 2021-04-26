@@ -274,10 +274,10 @@ a{
 .video-name{
    margin:0px;
    color:$white;
-//    text-overflow: ellipsis;
-//   overflow: hidden; 
-//   width: 100px; 
-//   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden; 
+   width: 230px; 
+   white-space: nowrap;
 }
 .number-of-views{
    margin: 0px;
@@ -324,7 +324,14 @@ a{
    padding:32px;
    width: calc(100vw - 72px);
    height: 1000px;
-}}
+}
+.video-name{
+   text-overflow: ellipsis;
+   overflow: hidden; 
+   width: 200px; 
+   white-space: nowrap;
+}
+}
 @media(max-width:890px){
    .video{
       width: 48%;}}
