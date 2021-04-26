@@ -207,6 +207,10 @@ aside{
    white-space: nowrap;
    
 }
+.filter:hover{
+   background-color: #575353;
+   transition: 0.7s;
+}
 .video-page{
    display: flex;
    flex-direction: column;
