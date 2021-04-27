@@ -118,6 +118,15 @@ aside{
    flex-direction: column;
    border-bottom: 1px solid $bordor-color;
 }
+
+
+.home p{
+   text-overflow: ellipsis;
+   overflow: hidden; 
+   width: 128px; 
+   white-space: nowrap;
+
+}
 .sidebar{
    position:fixed;
    top:56px;
@@ -170,7 +179,25 @@ aside{
 
 }
 
-
+.subscription-list{
+   display: flex;
+   align-items: center;
+}
+.subscription-icon{
+   padding: 8px 36px 8px 24px;
+   display:flex;
+   align-items: center;
+   width: 100%;
+   height: 40px;
+   color: $white;
+   font-size: 14px;
+}
+.subscription-icon:hover{
+   background-color: #90909075;
+}
+.new-one{
+   margin-left: 40px;
+}
 .header-video{
    width:100% ;
    display:flex ;
@@ -222,7 +249,7 @@ aside{
    box-sizing: border-box;
    padding:32px;
    width: calc(100vw - 240px);
-   height: 1000px;
+   height:max-content;
 
 }
 .sidebar button:hover{
@@ -284,6 +311,13 @@ a{
    color: $icon-color;
 
 }
+@media(max-width:1300px){
+   .video-name{
+      text-overflow: ellipsis;
+      overflow: hidden; 
+      width: 200px; 
+      white-space: nowrap;}
+}
 @media(max-width:1141px){
    .video{
       width: 33%;
@@ -325,12 +359,8 @@ a{
    width: calc(100vw - 72px);
    height: 1000px;
 }
-.video-name{
-   text-overflow: ellipsis;
-   overflow: hidden; 
-   width: 200px; 
-   white-space: nowrap;
-}
+
+
 }
 @media(max-width:890px){
    .video{
@@ -345,5 +375,9 @@ a{
 
    }
    
+   @media(max-width:590px){
+      .video{
+         width: 98%;}
 
+   }
    
