@@ -205,7 +205,7 @@ aside {
   border: 1px solid #424242;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
-  margin: 12px 12px 12px 0px;
+  margin-left: 12px;
   box-sizing: border-box;
   max-height: 33px;
   white-space: nowrap; }
@@ -224,7 +224,7 @@ aside {
   box-sizing: border-box;
   padding: 32px;
   width: calc(100vw - 240px);
-  height: max-content; }
+  height: 1000px; }
 
 .sidebar button:hover {
   background-color: #90909075; }
@@ -312,14 +312,15 @@ a {
   .video-page {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     position: relative;
     top: 56px;
-    left: 80px;
+    left: 72px;
     background-color: #181818;
     box-sizing: border-box;
     padding: 32px;
-    width: calc(100vw - 72px);
-    height: 1000px; } }
+    width: calc(100vw - 68px);
+    height: 2500px; } }
 @media (max-width: 890px) {
   .video {
     width: 48%; } }
